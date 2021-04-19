@@ -1,0 +1,17 @@
+commit 1f8447d5d38c68bf26d9128d27085ac14026c4b9
+Author: Reda <reda.h@outlook.com>
+Date:   Mon Apr 19 11:10:03 2021 +0200
+
+    ajout de la page contact
+
+commit adf865d2e23af95904f1b77cdcdb2852dcf8d3f0
+Author: Reda <reda.h@outlook.com>
+Date:   Mon Apr 19 10:59:00 2021 +0200
+
+    ajout de la page de contact
+
+commit ec0fabbbe141ac2268f531e6e204c17ac8d5a2db
+Author: Reda <reda.h@outlook.com>
+Date:   Mon Apr 19 10:26:27 2021 +0200
+
+    ajoute la page d'acceuil
