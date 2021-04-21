@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="retour"></ion-back-button>
+    </ion-buttons>
+    <ion-title>form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>Bonjour {{ person.firstName }} {{person.name}} </h2>
+  <p>Vous avez {{person.competences.length}} compétences.</p>
+  <ion-list>
+ <ion-item>
+   <ion-label position="stacked" > Nom : </ion-label>
+   <ion-input placeholder="votre nom" [(ngModel)]="person.name"></ion-input>
+ </ion-item>
+ 
+ <ion-item>
+   <ion-label position="floating" > Prenom :</ion-label>
+   <ion-input placeholder="Votre Prenom" [(ngModel)]="person.firstName"></ion-input>
+ </ion-item>
+
+ <ion-item>
+   <ion-label position="floating" >Votre age :</ion-label>
+   <ion-input type="number" placeholder="Votre âge"[(ngModel)]="person.age" ></ion-input>
+ </ion-item>
+
+ <ion-item>
+   <ion-label position="floating">Profession</ion-label>
+   <ion-select [(ngModel)]="person.job">
+     <ion-select-option>Developpeur</ion-select-option>
+     <ion-select-option>Chef de projet</ion-select-option>
+     <ion-select-option>Architecte logiciel</ion-select-option>
+   </ion-select>
+ </ion-item>
+ <ion-item>
+   <ion-label position="floating"> Compétences :</ion-label>
+   <ion-select multiple="true" [(ngModel)]="person.competences">
+<ion-select-option>Html</ion-select-option>
+<ion-select-option>CSS</ion-select-option>
+<ion-select-option>Java</ion-select-option>
+<ion-select-option>Javascript</ion-select-option>
+<ion-select-option>Ionic</ion-select-option>
+<ion-select-option>Type</ion-select-option>
+</ion-select>
+ </ion-item>
+
+  
+</ion-list>
+</ion-content>
